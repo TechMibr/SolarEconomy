@@ -1,7 +1,7 @@
 # SolarEconomy
 
 
-![Logo](https://i.imgur.com/6GavyIQ.png "Logo")
+![Logo](https://i.imgur.com/shNZkCr.gif "Logo")
 
 
 O mundo possui uma matriz energética composta, principalmente por fontes não renováveis, ou seja, esgotáveis. Iremos fornecer um **comparativo** da energia elétrica comum utilizada nas residências brasileiras com o uso de **painéis solares**, apresentando seus **benefícios** tanto do ponto de vista **ecológico** quanto **econômico** a fim de popularizar a prática.
