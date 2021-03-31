@@ -20,7 +20,7 @@ Trabalho prático da disciplina de **Usabilidade, desenvolvimento web, mobile e 
 |Eduardo Edgar Alcantara Groders|	319141024|	edugroders@hotmail.com|	5°
 |Matheus Vaz Leocadio|	31927682|	matheusvazleocadio@gmail.com|	5º
 |Pedro Henrique Anjos|	31716178|	pedroh.anjos.silva@hotmail.com.br|	8º
-|Leandro de Oliveira Costa|	318715317|	leandro.o.costa@outlook.com|	8º
+|Leandro de Oliveira Costa|	31715317|	leandro.o.costa@outlook.com|	8º
 
 **Professores:**
 
