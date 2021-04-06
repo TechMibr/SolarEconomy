@@ -5,7 +5,7 @@
 
 <h4 align="center">
   
-[![GitHub issues](https://img.shields.io/github/issues/TechMibr/SolarEconomy?style=for-the-badge)](https://github.com/TechMibr/SolarEconomy/issues) [![GitHub license](https://img.shields.io/github/license/TechMibr/SolarEconomy?style=for-the-badge)](https://github.com/TechMibr/SolarEconomy/blob/main/LICENSE) ![GitHub last commit](https://img.shields.io/github/last-commit/techMibr/SolarEconomy)
+[![GitHub issues](https://img.shields.io/github/issues/TechMibr/SolarEconomy?style=for-the-badge)](https://github.com/TechMibr/SolarEconomy/issues) [![GitHub license](https://img.shields.io/github/license/TechMibr/SolarEconomy?style=for-the-badge)](https://github.com/TechMibr/SolarEconomy/blob/main/LICENSE) ![GitHub last commit](https://img.shields.io/github/last-commit/techMibr/SolarEconomy?style=for-the-badge)
 </h4>
 <br>
 
