@@ -3,8 +3,8 @@
 
 ![Logo](https://i.imgur.com/6GavyIQ.png "Logo")
 
-<p align="center"> 
-![](https://img.shields.io/github/issues/TechMibr/SolarEconomy?style=for-the-badge) ![](https://img.shields.io/github/license/TechMibr/SolarEconomy?style=for-the-badge) ![](https://img.shields.io/github/commit-activity/y/TechMibr/SolarEconomy?style=for-the-badge)
+<p align="center">
+[![GitHub issues](https://img.shields.io/github/issues/TechMibr/SolarEconomy?style=for-the-badge)](https://github.com/TechMibr/SolarEconomy/issues) [![GitHub license](https://img.shields.io/github/license/TechMibr/SolarEconomy?style=for-the-badge)](https://github.com/TechMibr/SolarEconomy/blob/main/LICENSE) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/TechMibr/SolarEconomy?style=for-the-badge)
 </p>
 <br>
 
