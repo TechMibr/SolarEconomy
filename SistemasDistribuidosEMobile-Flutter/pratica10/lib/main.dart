@@ -107,6 +107,7 @@ class HomeState extends State<Home> {
             ),
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               ElevatedButton(
                 onPressed: () {
@@ -133,6 +134,7 @@ class HomeState extends State<Home> {
                 ),
               ),
               ElevatedButton(
+                style: ButtonStyle(),
                 onPressed: () {
                   print(multiplicar());
                   setState(multiplicar);
