@@ -53,16 +53,15 @@ class PrimeiraRotaState extends State<PrimeiraRota> {
 }
 
 class SegundaRota extends StatelessWidget {
-  TextEditingController controller1 = TextEditingController();
-  TextEditingController controller2 = TextEditingController();
+  TextEditingController num1Controller = TextEditingController();
+  TextEditingController num2Controller = TextEditingController();
   String resposta;
 
   somar() {
-    int num1 = int.tryParse(controller1.text);
-    int num2 = int.tryParse(controller2.text);
-    int soma = num1 + num2;
-    this.resposta = '$num1 + $num2 = $soma';
-    return resposta;
+    double num1 = double.parse(this.num1Controller.text);
+    double num2 = double.parse(this.num2Controller.text);
+    double soma = num1 + num2;
+    return '$num1 + $num2 = $soma';
   }
 
   @override
@@ -80,7 +79,7 @@ class SegundaRota extends StatelessWidget {
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 25.0),
             // ignore: missing_return
-            controller: controller1,
+            controller: this.num1Controller,
           ),
           TextField(
             keyboardType: TextInputType.number,
@@ -89,11 +88,12 @@ class SegundaRota extends StatelessWidget {
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 25.0),
             // ignore: missing_return
-            controller: controller2,
+            controller: this.num2Controller,
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.pop(context, '$resposta');
+              String resp = somar();
+              Navigator.pop(context, '$resp');
             },
             child: Text('Voltar para a Primeira Rota'),
           ),
