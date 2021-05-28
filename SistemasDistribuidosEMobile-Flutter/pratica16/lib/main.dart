@@ -6,7 +6,7 @@ void main() => runApp(
       ),
     );
 
-// O objeto da classe mensagem será enviado para a segunda rota.
+// O objeto da classe preço será enviado para a segunda rota.
 class Preco {
   double etanol;
   double gasolina;
@@ -14,9 +14,16 @@ class Preco {
   razao() => etanol / gasolina;
 }
 
-class PrimeiraRota extends StatelessWidget {
+class PrimeiraRota extends StatefulWidget {
+  PrimeiraRotaState createState() {
+    return PrimeiraRotaState();
+  }
+}
+
+class PrimeiraRotaState extends State<PrimeiraRota> {
   final TextEditingController etanolController = TextEditingController();
   final TextEditingController gasolinaController = TextEditingController();
+  String resp = '';
 
   @override
   Widget build(BuildContext context) {
@@ -29,10 +36,10 @@ class PrimeiraRota extends StatelessWidget {
           Container(
             margin: EdgeInsets.all(10),
             child: TextField(
-              controller: etanolController,
+              controller: this.etanolController,
               decoration: InputDecoration(
                 suffixIcon: IconButton(
-                  onPressed: () => etanolController.clear(),
+                  onPressed: () => this.etanolController.clear(),
                   icon: Icon(Icons.clear),
                 ),
                 border: OutlineInputBorder(),
@@ -43,10 +50,10 @@ class PrimeiraRota extends StatelessWidget {
           Container(
             margin: EdgeInsets.all(10),
             child: TextField(
-              controller: gasolinaController,
+              controller: this.gasolinaController,
               decoration: InputDecoration(
                 suffixIcon: IconButton(
-                  onPressed: () => gasolinaController.clear(),
+                  onPressed: () => this.gasolinaController.clear(),
                   icon: Icon(Icons.clear),
                 ),
                 border: OutlineInputBorder(),
@@ -56,15 +63,34 @@ class PrimeiraRota extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
+              double etanol = double.parse(this.etanolController.text);
+              double gasolina = double.parse(this.gasolinaController.text);
+
               Preco preco = Preco(
-                double.parse(etanolController.text),
-                double.parse(gasolinaController.text),
+                etanol,
+                gasolina,
               );
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => SegundaRota(preco)));
+
+              Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => SegundaRota(preco)))
+                  .then((retorno) {
+                setState(() {
+                  resp = retorno;
+                });
+              });
             },
             child: Text('Ir para a Segunda Rota'),
           ),
+          Text(
+            '${this.resp}',
+            style: TextStyle(
+              fontSize: 30,
+              color: Colors.blue,
+              fontWeight: FontWeight.bold,
+            ),
+          )
         ],
       ),
     );
@@ -75,20 +101,11 @@ class SegundaRota extends StatelessWidget {
   final Preco preco;
   SegundaRota(this.preco);
 
-  calcular() {
-    String resposta;
-    double etanol = double.parse(preco.etanol.toStringAsFixed(2));
-    double gasolina = double.parse(preco.gasolina.toStringAsFixed(2));
-    double calculo = etanol / gasolina;
-    if (calculo < 0.7) {
-      resposta = "Abasteça com etanol!";
-    } else {
-      resposta = "Abasteça com gasolina!";
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
+    String resp = 'gasolina!';
+    if (preco.razao() < 0.7) resp = 'etanol';
+
     return Scaffold(
       appBar: AppBar(
         title: Text('Segunda Rota'),
@@ -105,16 +122,16 @@ class SegundaRota extends StatelessWidget {
               ),
             ),
             Text(
-              'Abasteça com gasolina!',
+              'Abasteça com $resp',
               style: TextStyle(
                 fontSize: 25,
                 color: Colors.blue,
               ),
             ),
             ElevatedButton(
-              child: Text('Ir para a Primeira Rota'),
+              child: Text('Ir para a primeira Rota'),
               onPressed: () {
-                Navigator.pop(context);
+                Navigator.pop(context, "Abasteça com $resp!");
               },
             ),
           ],
