@@ -24,32 +24,13 @@ class Slide1 extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Padding(
-            padding: EdgeInsets.fromLTRB(0, 120, 0, 0),
+            padding: EdgeInsets.fromLTRB(20, 120, 20, 0),
             child: Image.asset(
-              'images/logo.png',
+              'images/logofinal.png',
+              color: Color(0XFFD9985F),
               width: 230,
               height: 230,
               fit: BoxFit.contain,
-            ),
-          ),
-          RichText(
-            textAlign: TextAlign.center,
-            text: TextSpan(
-              text: 'SOLAR ',
-              style: TextStyle(
-                color: Colors.amber,
-                fontSize: 35,
-                fontWeight: FontWeight.bold,
-              ),
-              children: const <TextSpan>[
-                TextSpan(
-                    text: 'ECONOMY',
-                    style: TextStyle(
-                      color: Colors.lightGreen,
-                      fontSize: 35,
-                      fontWeight: FontWeight.bold,
-                    )),
-              ],
             ),
           ),
           Padding(
@@ -58,7 +39,7 @@ class Slide1 extends StatelessWidget {
               "SEJA BEM-VINDO(A)",
               textAlign: TextAlign.center,
               style: TextStyle(
-                color: Colors.grey,
+                color: Color(0XFF012257),
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
               ),
@@ -85,44 +66,21 @@ class Slide2 extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
                 child: Image.asset(
-                  'images/logo.png',
-                  width: 100,
-                  height: 100,
+                  'images/logotopc.png',
+                  width: 200,
+                  height: 200,
                   fit: BoxFit.contain,
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
-                child: RichText(
-                  textAlign: TextAlign.center,
-                  text: TextSpan(
-                    text: 'SOLAR ',
-                    style: TextStyle(
-                      color: Colors.amber,
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
-                    children: const <TextSpan>[
-                      TextSpan(
-                          text: 'ECONOMY',
-                          style: TextStyle(
-                            color: Colors.lightGreen,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                          )),
-                    ],
-                  ),
                 ),
               ),
             ],
           ),
           Padding(
-            padding: EdgeInsets.fromLTRB(0, 60, 0, 0),
+            padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
             child: Text(
               "O QUE É ENERGIA RENOVÁVEL?",
               textAlign: TextAlign.center,
               style: TextStyle(
-                color: Colors.orange,
+                color: Color(0XFFD9985F),
                 fontSize: 23,
                 fontWeight: FontWeight.bold,
               ),
@@ -145,7 +103,7 @@ class Slide2 extends StatelessWidget {
                 text:
                     'Energia renovável é aquela que vem de recursos naturais que são naturalmente reabastecidos, como ',
                 style: TextStyle(
-                  color: Colors.black54,
+                  color: Color(0XFF012257),
                   fontSize: 15,
                   fontWeight: FontWeight.normal,
                 ),
@@ -153,7 +111,7 @@ class Slide2 extends StatelessWidget {
                   TextSpan(
                       text: 'sol, vento, chuva, marés e energia geotérmica.',
                       style: TextStyle(
-                        color: Colors.black54,
+                        color: Color(0XFF012257),
                         fontSize: 15,
                         fontWeight: FontWeight.bold,
                       )),
@@ -184,44 +142,21 @@ class Slide3 extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
                 child: Image.asset(
-                  'images/logo.png',
-                  width: 100,
-                  height: 100,
+                  'images/logotopc.png',
+                  width: 200,
+                  height: 200,
                   fit: BoxFit.contain,
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
-                child: RichText(
-                  textAlign: TextAlign.center,
-                  text: TextSpan(
-                    text: 'SOLAR ',
-                    style: TextStyle(
-                      color: Colors.amber,
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
-                    children: const <TextSpan>[
-                      TextSpan(
-                          text: 'ECONOMY',
-                          style: TextStyle(
-                            color: Colors.lightGreen,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                          )),
-                    ],
-                  ),
                 ),
               ),
             ],
           ),
           Padding(
-            padding: EdgeInsets.fromLTRB(0, 60, 0, 0),
+            padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
             child: Text(
               "ECONOMIA E SUSTENTABILIDADE",
               textAlign: TextAlign.center,
               style: TextStyle(
-                color: Colors.orange,
+                color: Color(0XFFD9985F),
                 fontSize: 23,
                 fontWeight: FontWeight.bold,
               ),
@@ -244,7 +179,7 @@ class Slide3 extends StatelessWidget {
                 text:
                     'Substituir a energia elétrica convencional pela energia solar, geralmente representa uma redução na conta que varia de',
                 style: TextStyle(
-                  color: Colors.black54,
+                  color: Color(0XFF012257),
                   fontSize: 15,
                   fontWeight: FontWeight.normal,
                 ),
@@ -252,28 +187,28 @@ class Slide3 extends StatelessWidget {
                   TextSpan(
                       text: ' 50% ',
                       style: TextStyle(
-                        color: Colors.green,
+                        color: Color(0XFFD9985F),
                         fontSize: 15,
                         fontWeight: FontWeight.bold,
                       )),
                   TextSpan(
                       text: 'a',
                       style: TextStyle(
-                        color: Colors.black54,
+                        color: Color(0XFF012257),
                         fontSize: 15,
                       )),
                   TextSpan(
                       text: ' 95%.',
                       style: TextStyle(
-                        color: Colors.green,
+                        color: Color(0XFFD9985F),
                         fontSize: 15,
                         fontWeight: FontWeight.bold,
                       )),
                   TextSpan(
                       text:
-                          ' Tudo isso ajudando o planeta com uma energia limpa!.',
+                          ' Tudo isso ajudando o planeta com uma energia limpa!',
                       style: TextStyle(
-                        color: Colors.black54,
+                        color: Color(0XFF012257),
                         fontSize: 15,
                         fontWeight: FontWeight.normal,
                       )),
@@ -302,67 +237,44 @@ class Slide4 extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
                 child: Image.asset(
-                  'images/logo.png',
-                  width: 100,
-                  height: 100,
+                  'images/logotopc.png',
+                  width: 200,
+                  height: 200,
                   fit: BoxFit.contain,
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
-                child: RichText(
-                  textAlign: TextAlign.center,
-                  text: TextSpan(
-                    text: 'SOLAR ',
-                    style: TextStyle(
-                      color: Colors.amber,
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
-                    children: const <TextSpan>[
-                      TextSpan(
-                          text: 'ECONOMY',
-                          style: TextStyle(
-                            color: Colors.lightGreen,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                          )),
-                    ],
-                  ),
                 ),
               ),
             ],
           ),
           Padding(
-            padding: EdgeInsets.fromLTRB(0, 60, 0, 0),
+            padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
             child: Text(
               "NÓS AJUDAMOS VOCÊ!",
               textAlign: TextAlign.center,
               style: TextStyle(
-                color: Colors.orange,
+                color: Color(0XFFD9985F),
                 fontSize: 23,
                 fontWeight: FontWeight.bold,
               ),
             ),
           ),
           Padding(
-            padding: EdgeInsets.fromLTRB(30, 20, 0, 20),
+            padding: EdgeInsets.fromLTRB(30, 40, 0, 20),
             child: Image.asset(
-              'images/pessoas-trabalhando.png',
+              'images/pessoastrabalhando.png',
               width: 210,
               height: 210,
               fit: BoxFit.contain,
             ),
           ),
           Padding(
-            padding: EdgeInsets.fromLTRB(10, 0, 10, 30),
+            padding: EdgeInsets.fromLTRB(10, 10, 10, 30),
             child: RichText(
               textAlign: TextAlign.center,
               text: TextSpan(
                 text:
                     'Nosso aplicativo ajuda você a calcular os custos de implantação, economia gerada pelos painéis solares e encontrar profissionais especializados.',
                 style: TextStyle(
-                  color: Colors.black54,
+                  color: Color(0XFF012257),
                   fontSize: 15,
                   fontWeight: FontWeight.normal,
                 ),
@@ -380,7 +292,7 @@ class Slide4 extends StatelessWidget {
           ),
           ElevatedButton(
             style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all(Colors.green),
+              backgroundColor: MaterialStateProperty.all(Color(0XFF012257)),
             ),
             onPressed: () {},
             child: const Text('COMEÇAR'),

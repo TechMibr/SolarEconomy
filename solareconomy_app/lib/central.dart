@@ -9,39 +9,11 @@ class Central extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        toolbarHeight: 70,
-        titleSpacing: 50,
-        backgroundColor: Colors.indigo[900],
-        title: Row(
-          children: [
-            Image.asset(
-              'images/logo.png',
-              height: 40,
-            ),
-            Padding(
-              padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-              child: RichText(
-                textAlign: TextAlign.center,
-                text: TextSpan(
-                  text: 'SOLAR ',
-                  style: TextStyle(
-                    color: Colors.amber,
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                  ),
-                  children: const <TextSpan>[
-                    TextSpan(
-                        text: 'ECONOMY',
-                        style: TextStyle(
-                          color: Colors.lightGreen,
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                        )),
-                  ],
-                ),
-              ),
-            ),
-          ],
+        toolbarHeight: 80,
+        backgroundColor: Color(0XFF012257),
+        title: Image.asset(
+          'images/logotopb.png',
+          height: 40,
         ),
         centerTitle: true,
       ),
@@ -57,13 +29,13 @@ class Central extends StatelessWidget {
                   Text(
                     'BOLETIM INFORMATIVO',
                     style: TextStyle(
-                      color: Colors.amber[700],
+                      color: Color(0XFFD9985F),
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.fromLTRB(0, 20, 0, 50),
+                    padding: EdgeInsets.fromLTRB(0, 20, 0, 30),
                     child: Stack(
                       children: [
                         Container(
@@ -106,7 +78,7 @@ class Central extends StatelessWidget {
                     child: Text(
                       'COMEÇAR',
                       style: TextStyle(
-                        color: Colors.amber[700],
+                        color: Color(0XFFD9985F),
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
                       ),
@@ -118,13 +90,13 @@ class Central extends StatelessWidget {
                         constraints: BoxConstraints.tightFor(height: 60, width: 320),
                         child: ElevatedButton(
                           style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all(Colors.indigo[900]),
+                            backgroundColor: MaterialStateProperty.all(Color(0XFF012257)),
                           ),
                           onPressed: () {},
                           child: Align(
                             alignment: Alignment.centerLeft,
                             child: Container(
-                              
+
                               child: const Text(
                                 'Calculadora de Economia',
                                 textAlign: TextAlign.start,
@@ -145,7 +117,7 @@ class Central extends StatelessWidget {
                         constraints: BoxConstraints.tightFor(height: 60, width: 320),
                         child: ElevatedButton(
                           style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all(Colors.indigo[900]),
+                            backgroundColor: MaterialStateProperty.all(Color(0XFF012257)),
                           ),
                           onPressed: () {},
                           child: Align(
@@ -171,7 +143,7 @@ class Central extends StatelessWidget {
                         constraints: BoxConstraints.tightFor(height: 60, width: 320),
                         child: ElevatedButton(
                           style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all(Colors.indigo[900]),
+                            backgroundColor: MaterialStateProperty.all(Color(0XFF012257)),
                           ),
                           onPressed: () {},
                           child: Align(
@@ -197,7 +169,7 @@ class Central extends StatelessWidget {
                         constraints: BoxConstraints.tightFor(height: 60, width: 320),
                         child: ElevatedButton(
                           style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all(Colors.indigo[900]),
+                            backgroundColor: MaterialStateProperty.all(Color(0XFF012257)),
                           ),
                           onPressed: () {},
                           child: Align(
