@@ -355,7 +355,7 @@ class Slide4 extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.fromLTRB(10, 0, 10, 20),
+            padding: EdgeInsets.fromLTRB(10, 0, 10, 30),
             child: RichText(
               textAlign: TextAlign.center,
               text: TextSpan(

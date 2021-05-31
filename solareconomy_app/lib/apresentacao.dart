@@ -18,7 +18,7 @@ class apresentacao extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        minimum: EdgeInsets.all(30),
+        minimum: EdgeInsets.all(8),
         child: Column(
           children: [
             Expanded(
