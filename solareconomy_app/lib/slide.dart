@@ -2,6 +2,7 @@ import 'dart:math';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:solareconomy_app/central.dart';
 
 class Slide extends StatelessWidget {
   final Widget slideopcao;
@@ -294,7 +295,9 @@ class Slide4 extends StatelessWidget {
             style: ButtonStyle(
               backgroundColor: MaterialStateProperty.all(Color(0XFF012257)),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/central');
+            },
             child: const Text('COMEÇAR'),
           ),
         ],

@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:solareconomy_app/calculadoraEconomia.dart';
+import 'package:solareconomy_app/saibamais1.dart';
 
 class Central extends StatelessWidget {
   const Central({Key key}) : super(key: key);
@@ -8,7 +10,9 @@ class Central extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      drawer: Drawer(),
       appBar: AppBar(
+        iconTheme: IconThemeData(color: Color(0XFFD9985F)),
         toolbarHeight: 80,
         backgroundColor: Color(0XFF012257),
         title: Image.asset(
@@ -17,7 +21,6 @@ class Central extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      drawer: Drawer(),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -38,26 +41,30 @@ class Central extends StatelessWidget {
                     padding: EdgeInsets.fromLTRB(0, 20, 0, 30),
                     child: Stack(
                       children: [
-                        Container(
-                          height: 160,
-                          width: 320,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(21),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.grey.withOpacity(0.5),
-                                spreadRadius: 5,
-                                blurRadius: 7,
-                                offset:
-                                Offset(0, 5), // changes position of shadow
+                        GestureDetector(
+                            onTap: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Saibamais1()));
+                            },
+                            child: Container(
+                              height: 160,
+                              width: 320,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(21),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.withOpacity(0.5),
+                                    spreadRadius: 5,
+                                    blurRadius: 7,
+                                    offset:
+                                    Offset(0, 5), // changes position of shadow
+                                  ),
+                                ],
+                                image: DecorationImage(
+                                  fit: BoxFit.contain,
+                                  image: AssetImage('images/casa1.png'),
+                                ),
                               ),
-                            ],
-                            image: DecorationImage(
-                              fit: BoxFit.contain,
-                              image: AssetImage('images/casa1.png'),
-                            ),
-                          ),
-                        ),
+                            ),),
                         Positioned(
                           bottom: 10,
                           right: 50,
@@ -87,16 +94,20 @@ class Central extends StatelessWidget {
                   Container(
                       padding: EdgeInsets.fromLTRB(10, 10, 10, 3),
                       child: ConstrainedBox(
-                        constraints: BoxConstraints.tightFor(height: 60, width: 320),
+                        constraints:
+                            BoxConstraints.tightFor(height: 60, width: 320),
                         child: ElevatedButton(
                           style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all(Color(0XFF012257)),
+                            backgroundColor:
+                                MaterialStateProperty.all(Color(0XFF012257)),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => CalculadoraEconomia()));
+
+                          },
                           child: Align(
                             alignment: Alignment.centerLeft,
                             child: Container(
-
                               child: const Text(
                                 'Calculadora de Economia',
                                 textAlign: TextAlign.start,
@@ -109,15 +120,16 @@ class Central extends StatelessWidget {
                             ),
                           ),
                         ),
-                      )
-                  ),
+                      )),
                   Container(
                       padding: EdgeInsets.fromLTRB(10, 10, 10, 3),
                       child: ConstrainedBox(
-                        constraints: BoxConstraints.tightFor(height: 60, width: 320),
+                        constraints:
+                            BoxConstraints.tightFor(height: 60, width: 320),
                         child: ElevatedButton(
                           style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all(Color(0XFF012257)),
+                            backgroundColor:
+                                MaterialStateProperty.all(Color(0XFF012257)),
                           ),
                           onPressed: () {},
                           child: Align(
@@ -135,17 +147,20 @@ class Central extends StatelessWidget {
                             ),
                           ),
                         ),
-                      )
-                  ),
+                      )),
                   Container(
                       padding: EdgeInsets.fromLTRB(10, 10, 10, 3),
                       child: ConstrainedBox(
-                        constraints: BoxConstraints.tightFor(height: 60, width: 320),
+                        constraints:
+                            BoxConstraints.tightFor(height: 60, width: 320),
                         child: ElevatedButton(
                           style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all(Color(0XFF012257)),
+                            backgroundColor:
+                                MaterialStateProperty.all(Color(0XFF012257)),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Saibamais1()));
+                          },
                           child: Align(
                             alignment: Alignment.centerLeft,
                             child: Container(
@@ -161,15 +176,16 @@ class Central extends StatelessWidget {
                             ),
                           ),
                         ),
-                      )
-                  ),
+                      )),
                   Container(
                       padding: EdgeInsets.fromLTRB(10, 10, 10, 3),
                       child: ConstrainedBox(
-                        constraints: BoxConstraints.tightFor(height: 60, width: 320),
+                        constraints:
+                            BoxConstraints.tightFor(height: 60, width: 320),
                         child: ElevatedButton(
                           style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all(Color(0XFF012257)),
+                            backgroundColor:
+                                MaterialStateProperty.all(Color(0XFF012257)),
                           ),
                           onPressed: () {},
                           child: Align(
@@ -187,13 +203,10 @@ class Central extends StatelessWidget {
                             ),
                           ),
                         ),
-                      )
-                  ),
+                      )),
                 ],
               ),
             ),
-
-
           ],
         ),
       ),
