@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:solareconomy_app/calculadoraEconomia.dart';
+import 'package:solareconomy_app/centrosaibamais.dart';
 import 'package:solareconomy_app/saibamais1.dart';
 
 class Central extends StatelessWidget {
@@ -10,7 +11,57 @@ class Central extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      drawer: Drawer(),
+      drawer: Drawer(
+          child: ListView(
+        padding: EdgeInsets.zero,
+        children: [
+          DrawerHeader(
+              decoration: BoxDecoration(
+                color: Color(0XFF012257),
+              ),
+              child: Image.asset(
+                'images/logotopb.png',
+              )),
+          ListTile(
+            leading: Icon(Icons.home),
+            title: Text('Início',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                )),
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.add_circle_rounded),
+            title: Text('Saiba mais'),
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (BuildContext context) =>
+                          CentroSaibaMais()));
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.monetization_on),
+            title: Text('DOE',
+                style: TextStyle(
+                  color: Colors.green,
+                  fontWeight: FontWeight.bold,
+                )),
+            onTap: () {},
+          ),
+          ListTile(
+            leading: Icon(Icons.info),
+            title: Text('Sobre',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                )),
+            onTap: () {},
+          ),
+        ],
+      )),
       appBar: AppBar(
         iconTheme: IconThemeData(color: Color(0XFFD9985F)),
         toolbarHeight: 80,
@@ -42,29 +93,34 @@ class Central extends StatelessWidget {
                     child: Stack(
                       children: [
                         GestureDetector(
-                            onTap: () {
-                              Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Saibamais1()));
-                            },
-                            child: Container(
-                              height: 160,
-                              width: 320,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(21),
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: Colors.grey.withOpacity(0.5),
-                                    spreadRadius: 5,
-                                    blurRadius: 7,
-                                    offset:
-                                    Offset(0, 5), // changes position of shadow
-                                  ),
-                                ],
-                                image: DecorationImage(
-                                  fit: BoxFit.contain,
-                                  image: AssetImage('images/casa1.png'),
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (BuildContext context) =>
+                                        Saibamais1()));
+                          },
+                          child: Container(
+                            height: 160,
+                            width: 320,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(21),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.5),
+                                  spreadRadius: 5,
+                                  blurRadius: 7,
+                                  offset: Offset(
+                                      0, 5), // changes position of shadow
                                 ),
+                              ],
+                              image: DecorationImage(
+                                fit: BoxFit.contain,
+                                image: AssetImage('images/casa1.png'),
                               ),
-                            ),),
+                            ),
+                          ),
+                        ),
                         Positioned(
                           bottom: 10,
                           right: 50,
@@ -102,8 +158,11 @@ class Central extends StatelessWidget {
                                 MaterialStateProperty.all(Color(0XFF012257)),
                           ),
                           onPressed: () {
-                            Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => CalculadoraEconomia()));
-
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (BuildContext context) =>
+                                        CalculadoraEconomia()));
                           },
                           child: Align(
                             alignment: Alignment.centerLeft,
@@ -159,7 +218,11 @@ class Central extends StatelessWidget {
                                 MaterialStateProperty.all(Color(0XFF012257)),
                           ),
                           onPressed: () {
-                            Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Saibamais1()));
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (BuildContext context) =>
+                                        Saibamais1()));
                           },
                           child: Align(
                             alignment: Alignment.centerLeft,

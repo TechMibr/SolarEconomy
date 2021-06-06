@@ -23,16 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58f63603-2a27-4b58-b904-5bc74116c466" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/solareconomy_app/lib/ajuda.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/solareconomy_app/lib/calculadoraEconomia.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/solareconomy_app/lib/doacao.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/solareconomy_app/lib/sobre.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solareconomy_app/lib/centrosaibamais.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solareconomy_app/lib/ajuda.dart" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/solareconomy_app/lib/central.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solareconomy_app/lib/central.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solareconomy_app/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solareconomy_app/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solareconomy_app/lib/slide.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solareconomy_app/lib/slide.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solareconomy_app/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/solareconomy_app/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solareconomy_app/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/solareconomy_app/pubspec.yaml" afterDir="false" />
     </list>
@@ -109,30 +104,30 @@
       <screen x="0" y="0" width="2560" height="1050" />
     </state>
     <state x="1030" y="326" key="#com.intellij.fileTypes.FileTypeChooser/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1622308265755" />
-    <state x="97" y="55" width="2376" height="866" key="AVDManager" timestamp="1622915591338">
+    <state x="97" y="55" width="2376" height="866" key="AVDManager" timestamp="1623013471101">
       <screen x="0" y="0" width="2560" height="1050" />
     </state>
-    <state x="97" y="55" width="2376" height="866" key="AVDManager/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1622915591338" />
+    <state x="97" y="55" width="2376" height="866" key="AVDManager/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1623013471101" />
     <state x="1065" y="242" key="FileChooserDialogImpl" timestamp="1622915234711">
       <screen x="0" y="0" width="2560" height="1050" />
     </state>
     <state x="1065" y="242" key="FileChooserDialogImpl/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1622915234711" />
-    <state width="2517" height="285" key="GridCell.Tab.0.bottom" timestamp="1622941669450">
+    <state width="2517" height="285" key="GridCell.Tab.0.bottom" timestamp="1623019492152">
       <screen x="0" y="0" width="2560" height="1050" />
     </state>
-    <state width="2517" height="285" key="GridCell.Tab.0.bottom/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1622941669450" />
-    <state width="2517" height="285" key="GridCell.Tab.0.center" timestamp="1622941669450">
+    <state width="2517" height="285" key="GridCell.Tab.0.bottom/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1623019492152" />
+    <state width="2517" height="285" key="GridCell.Tab.0.center" timestamp="1623019492152">
       <screen x="0" y="0" width="2560" height="1050" />
     </state>
-    <state width="2517" height="285" key="GridCell.Tab.0.center/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1622941669450" />
-    <state width="2517" height="285" key="GridCell.Tab.0.left" timestamp="1622941669450">
+    <state width="2517" height="285" key="GridCell.Tab.0.center/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1623019492152" />
+    <state width="2517" height="285" key="GridCell.Tab.0.left" timestamp="1623019492152">
       <screen x="0" y="0" width="2560" height="1050" />
     </state>
-    <state width="2517" height="285" key="GridCell.Tab.0.left/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1622941669450" />
-    <state width="2517" height="285" key="GridCell.Tab.0.right" timestamp="1622941669450">
+    <state width="2517" height="285" key="GridCell.Tab.0.left/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1623019492152" />
+    <state width="2517" height="285" key="GridCell.Tab.0.right" timestamp="1623019492152">
       <screen x="0" y="0" width="2560" height="1050" />
     </state>
-    <state width="2517" height="285" key="GridCell.Tab.0.right/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1622941669450" />
+    <state width="2517" height="285" key="GridCell.Tab.0.right/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1623019492152" />
     <state x="781" y="169" key="SettingsEditor" timestamp="1622915287142">
       <screen x="0" y="0" width="2560" height="1050" />
     </state>
