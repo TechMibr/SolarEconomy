@@ -123,12 +123,12 @@ class Central extends StatelessWidget {
                         ),
                         Positioned(
                           bottom: 10,
-                          right: 50,
+                          right: 30,
                           child: Text(
-                            'SAIBA MAIS SOBRE ENERGIA RENOVÁVEL',
+                            'COMO A ENERGIA RENOVÁVEL PODE TE AJUDAR?',
                             style: TextStyle(
                               color: Colors.white,
-                              fontSize: 13,
+                              fontSize: 12,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
@@ -222,13 +222,13 @@ class Central extends StatelessWidget {
                                 context,
                                 MaterialPageRoute(
                                     builder: (BuildContext context) =>
-                                        Saibamais1()));
+                                        CentroSaibaMais()));
                           },
                           child: Align(
                             alignment: Alignment.centerLeft,
                             child: Container(
                               child: const Text(
-                                'Sobre Energia Renovável',
+                                'Saiba mais sobre energia renovável',
                                 textAlign: TextAlign.start,
                                 style: TextStyle(
                                   color: Colors.white,

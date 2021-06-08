@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:solareconomy_app/saibamais1.dart';
+import 'package:solareconomy_app/saibamais2.dart';
+import 'package:solareconomy_app/saibamais3.dart';
+import 'package:solareconomy_app/saibamais4.dart';
 
 class CentroSaibaMais extends StatelessWidget {
   const CentroSaibaMais({Key key}) : super(key: key);
@@ -68,13 +71,13 @@ class CentroSaibaMais extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                               builder: (BuildContext context) =>
-                                  Saibamais1()));
+                                  Saibamais2()));
                     },
                     child: Align(
                       alignment: Alignment.center,
                       child: Container(
                         child: const Text(
-                          'OQUE É ENERGIA RENOVÁVEL E ENERGIA LIMPA?',
+                          'O QUE É ENERGIA RENOVÁVEL OU ENERGIA LIMPA?',
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 14,
@@ -100,7 +103,7 @@ class CentroSaibaMais extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                               builder: (BuildContext context) =>
-                                  Saibamais1()));
+                                  Saibamais3()));
                     },
                     child: Align(
                       alignment: Alignment.center,
@@ -132,13 +135,13 @@ class CentroSaibaMais extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                               builder: (BuildContext context) =>
-                                  Saibamais1()));
+                                  Saibamais4()));
                     },
                     child: Align(
                       alignment: Alignment.center,
                       child: Container(
                         child: const Text(
-                          'TESTEEEEEEEEEEEEEEEEEEEE',
+                          'PORQUE DEVO INSTALAR UMA FONTE RENOVÁVEL DE ENERGIA NA MINHA CASA?',
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 14,
@@ -170,7 +173,7 @@ class CentroSaibaMais extends StatelessWidget {
                       alignment: Alignment.center,
                       child: Container(
                         child: const Text(
-                          'TESTE TESTE',
+                          'USAR ENERGIA RENOVÁVEL PODE SER PERIGOSO?',
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 14,

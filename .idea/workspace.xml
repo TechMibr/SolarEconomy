@@ -23,12 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58f63603-2a27-4b58-b904-5bc74116c466" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/solareconomy_app/lib/centrosaibamais.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solareconomy_app/lib/saibamais2.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solareconomy_app/lib/saibamais3.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solareconomy_app/lib/saibamais4.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solareconomy_app/lib/saibamais5.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solareconomy_app/lib/ajuda.dart" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/solareconomy_app/lib/central.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solareconomy_app/lib/central.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solareconomy_app/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/solareconomy_app/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solareconomy_app/lib/centrosaibamais.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solareconomy_app/lib/centrosaibamais.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solareconomy_app/lib/saibamais1.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solareconomy_app/lib/saibamais1.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solareconomy_app/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/solareconomy_app/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,22 +114,22 @@
       <screen x="0" y="0" width="2560" height="1050" />
     </state>
     <state x="1065" y="242" key="FileChooserDialogImpl/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1622915234711" />
-    <state width="2517" height="285" key="GridCell.Tab.0.bottom" timestamp="1623019492152">
+    <state width="2517" height="287" key="GridCell.Tab.0.bottom" timestamp="1623188968669">
       <screen x="0" y="0" width="2560" height="1050" />
     </state>
-    <state width="2517" height="285" key="GridCell.Tab.0.bottom/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1623019492152" />
-    <state width="2517" height="285" key="GridCell.Tab.0.center" timestamp="1623019492152">
+    <state width="2517" height="287" key="GridCell.Tab.0.bottom/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1623188968669" />
+    <state width="2517" height="287" key="GridCell.Tab.0.center" timestamp="1623188968668">
       <screen x="0" y="0" width="2560" height="1050" />
     </state>
-    <state width="2517" height="285" key="GridCell.Tab.0.center/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1623019492152" />
-    <state width="2517" height="285" key="GridCell.Tab.0.left" timestamp="1623019492152">
+    <state width="2517" height="287" key="GridCell.Tab.0.center/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1623188968668" />
+    <state width="2517" height="287" key="GridCell.Tab.0.left" timestamp="1623188968668">
       <screen x="0" y="0" width="2560" height="1050" />
     </state>
-    <state width="2517" height="285" key="GridCell.Tab.0.left/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1623019492152" />
-    <state width="2517" height="285" key="GridCell.Tab.0.right" timestamp="1623019492152">
+    <state width="2517" height="287" key="GridCell.Tab.0.left/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1623188968668" />
+    <state width="2517" height="287" key="GridCell.Tab.0.right" timestamp="1623188968669">
       <screen x="0" y="0" width="2560" height="1050" />
     </state>
-    <state width="2517" height="285" key="GridCell.Tab.0.right/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1623019492152" />
+    <state width="2517" height="287" key="GridCell.Tab.0.right/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1623188968669" />
     <state x="781" y="169" key="SettingsEditor" timestamp="1622915287142">
       <screen x="0" y="0" width="2560" height="1050" />
     </state>

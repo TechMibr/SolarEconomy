@@ -59,6 +59,9 @@ flutter:
       - images/logofinal.png
       - images/logotopb.png
       - images/logotopc.png
+      - images/saibamais2.jpg
+      - images/saibamais3.jpg
+      - images/saibamais5.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
