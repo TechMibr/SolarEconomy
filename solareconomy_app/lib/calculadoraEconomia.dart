@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:solareconomy_app/resultado.dart';
 
 class CalculadoraEconomia extends StatefulWidget {
   const CalculadoraEconomia({Key key}) : super(key: key);
@@ -288,6 +289,11 @@ class _CalculadoraEconomiaState extends State<CalculadoraEconomia> {
                                             ScaffoldMessenger.of(context)
                                                 .showSnackBar(SnackBar(content: Text('Implementando')));
                                           }
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (BuildContext context) =>
+                                                      Resultado()));
                                         },
                                         child: Text('RESULTADO'),),),
                                   ],
@@ -306,3 +312,5 @@ class _CalculadoraEconomiaState extends State<CalculadoraEconomia> {
     );
   }
 }
+
+

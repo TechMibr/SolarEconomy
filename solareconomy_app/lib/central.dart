@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:solareconomy_app/calculadoraEconomia.dart';
 import 'package:solareconomy_app/centrosaibamais.dart';
+import 'package:solareconomy_app/doacao.dart';
 import 'package:solareconomy_app/profissionais.dart';
 import 'package:solareconomy_app/saibamais1.dart';
 import 'package:solareconomy_app/sobre.dart';
@@ -57,7 +58,12 @@ class Central extends StatelessWidget {
                   color: Colors.green,
                   fontWeight: FontWeight.bold,
                 )),
-            onTap: () {},
+            onTap: () {Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (BuildContext context) =>
+                        Doe()));
+            },
           ),
           ListTile(
             leading: Icon(Icons.info),
