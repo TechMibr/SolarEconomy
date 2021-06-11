@@ -21,7 +21,7 @@ class Saibamais5 extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Image.asset(
-              'images/saibamais5.png',
+              'images/saibamais5.jpg',
               width: 200,
               height: 200,
               fit: BoxFit.cover,

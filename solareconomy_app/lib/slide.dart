@@ -20,34 +20,32 @@ class Slide1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Padding(
-            padding: EdgeInsets.fromLTRB(20, 120, 20, 0),
-            child: Image.asset(
-              'images/logofinal.png',
-              color: Color(0XFFD9985F),
-              width: 230,
-              height: 230,
-              fit: BoxFit.contain,
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.fromLTRB(0, 150, 0, 0),
-            child: Text(
-              "SEJA BEM-VINDO(A)",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Color(0XFF012257),
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
+    return Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Padding(
+              padding: EdgeInsets.fromLTRB(20, 120, 20, 0),
+              child: Image.asset(
+                'images/logofinal.png',
+                color: Color(0XFFD9985F),
+                width: 230,
+                height: 230,
+                fit: BoxFit.contain,
               ),
             ),
-          ),
-        ],
-      ),
+            Padding(
+              padding: EdgeInsets.fromLTRB(0, 150, 0, 0),
+              child: Text(
+                "SEJA BEM-VINDO(A)",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Color(0XFF012257),
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ],
     );
   }
 }
@@ -90,7 +88,7 @@ class Slide2 extends StatelessWidget {
           Padding(
             padding: EdgeInsets.fromLTRB(0, 40, 0, 40),
             child: Image.asset(
-              'images/energiarenovavel.png',
+              'images/slide1.png',
               width: 210,
               height: 210,
               fit: BoxFit.contain,
@@ -166,7 +164,7 @@ class Slide3 extends StatelessWidget {
           Padding(
             padding: EdgeInsets.fromLTRB(0, 40, 0, 40),
             child: Image.asset(
-              'images/sacodinheiro.png',
+              'images/slide2.png',
               width: 210,
               height: 210,
               fit: BoxFit.contain,

@@ -11,7 +11,6 @@ class apresentacao extends StatelessWidget {
     { 'id': 0, 'slide' : Slide4() },
   ];
 
-
   apresentacao({Key key}) : super(key: key);
 
   @override

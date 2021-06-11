@@ -3,6 +3,7 @@ import 'package:solareconomy_app/saibamais1.dart';
 import 'package:solareconomy_app/saibamais2.dart';
 import 'package:solareconomy_app/saibamais3.dart';
 import 'package:solareconomy_app/saibamais4.dart';
+import 'package:solareconomy_app/saibamais5.dart';
 
 class CentroSaibaMais extends StatelessWidget {
   const CentroSaibaMais({Key key}) : super(key: key);
@@ -24,6 +25,15 @@ class CentroSaibaMais extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            Container(
+              padding: EdgeInsets.all(20),
+              child:Image.asset(
+                'images/centralsaibamais2.png',
+                width: 200,
+                height: 200,
+                fit: BoxFit.cover,
+              ),
+            ),
             Container(
                 padding: EdgeInsets.fromLTRB(10, 10, 10, 3),
                 child: ConstrainedBox(
@@ -167,7 +177,7 @@ class CentroSaibaMais extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                               builder: (BuildContext context) =>
-                                  Saibamais1()));
+                                  Saibamais5()));
                     },
                     child: Align(
                       alignment: Alignment.center,

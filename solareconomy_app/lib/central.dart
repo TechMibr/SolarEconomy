@@ -2,10 +2,17 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:solareconomy_app/calculadoraEconomia.dart';
 import 'package:solareconomy_app/centrosaibamais.dart';
+import 'package:solareconomy_app/profissionais.dart';
 import 'package:solareconomy_app/saibamais1.dart';
+import 'package:solareconomy_app/sobre.dart';
 
 class Central extends StatelessWidget {
   const Central({Key key}) : super(key: key);
+
+
+  desligado(){
+    return null;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -58,7 +65,11 @@ class Central extends StatelessWidget {
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 )),
-            onTap: () {},
+            onTap: () {Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (BuildContext context) =>
+                        Sobre()));},
           ),
         ],
       )),
@@ -147,126 +158,110 @@ class Central extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Container(
-                      padding: EdgeInsets.fromLTRB(10, 10, 10, 3),
-                      child: ConstrainedBox(
-                        constraints:
+                  Column(
+                    children: [
+                      Container(
+                          padding: EdgeInsets.fromLTRB(10, 10, 10, 3),
+
+                          child: ConstrainedBox(
+                            constraints:
                             BoxConstraints.tightFor(height: 60, width: 320),
-                        child: ElevatedButton(
-                          style: ButtonStyle(
-                            backgroundColor:
+                            child: ElevatedButton.icon(
+                              style: ButtonStyle(
+                                alignment: Alignment.centerLeft,
+                                backgroundColor:
                                 MaterialStateProperty.all(Color(0XFF012257)),
-                          ),
-                          onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (BuildContext context) =>
-                                        CalculadoraEconomia()));
-                          },
-                          child: Align(
-                            alignment: Alignment.centerLeft,
-                            child: Container(
-                              child: const Text(
-                                'Calculadora de Economia',
-                                textAlign: TextAlign.start,
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.normal,
-                                ),
                               ),
+                              label: Text('Calculadora de Economia'),
+                              icon: Icon(Icons.calculate),
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                            CalculadoraEconomia()));
+                              },
                             ),
-                          ),
-                        ),
-                      )),
-                  Container(
-                      padding: EdgeInsets.fromLTRB(10, 10, 10, 3),
-                      child: ConstrainedBox(
-                        constraints:
+                          )),
+                      Container(
+                          padding: EdgeInsets.fromLTRB(10, 10, 10, 3),
+                          child: ConstrainedBox(
+                            constraints:
                             BoxConstraints.tightFor(height: 60, width: 320),
-                        child: ElevatedButton(
-                          style: ButtonStyle(
-                            backgroundColor:
+                            child: ElevatedButton.icon(
+                              style: ButtonStyle(
+                                alignment: Alignment.centerLeft,
+                                backgroundColor:
                                 MaterialStateProperty.all(Color(0XFF012257)),
-                          ),
-                          onPressed: () {},
-                          child: Align(
-                            alignment: Alignment.centerLeft,
-                            child: Container(
-                              child: const Text(
-                                'Comparador',
-                                textAlign: TextAlign.start,
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.normal,
-                                ),
                               ),
+                              label: Text('Comparador'),
+                              icon: Icon(Icons.auto_awesome_motion),
+                              onPressed: () {},
                             ),
-                          ),
-                        ),
-                      )),
-                  Container(
-                      padding: EdgeInsets.fromLTRB(10, 10, 10, 3),
-                      child: ConstrainedBox(
-                        constraints:
+                          )),
+                      Container(
+                          padding: EdgeInsets.fromLTRB(10, 10, 10, 3),
+                          child: ConstrainedBox(
+                            constraints:
                             BoxConstraints.tightFor(height: 60, width: 320),
-                        child: ElevatedButton(
-                          style: ButtonStyle(
-                            backgroundColor:
+                            child: ElevatedButton.icon(
+                              style: ButtonStyle(
+                                alignment: Alignment.centerLeft,
+                                backgroundColor:
                                 MaterialStateProperty.all(Color(0XFF012257)),
-                          ),
-                          onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (BuildContext context) =>
-                                        CentroSaibaMais()));
-                          },
-                          child: Align(
-                            alignment: Alignment.centerLeft,
-                            child: Container(
-                              child: const Text(
-                                'Saiba mais sobre energia renovável',
-                                textAlign: TextAlign.start,
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.normal,
-                                ),
                               ),
+                              label: Text('Saiba mais sobre energia renovável'),
+                              icon: Icon(Icons.add_circle_rounded),
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                            CentroSaibaMais()));
+                              },
                             ),
-                          ),
-                        ),
-                      )),
-                  Container(
-                      padding: EdgeInsets.fromLTRB(10, 10, 10, 3),
-                      child: ConstrainedBox(
-                        constraints:
+                          )),
+                      Container(
+                          padding: EdgeInsets.fromLTRB(10, 10, 10, 3),
+                          child: ConstrainedBox(
+                            constraints:
                             BoxConstraints.tightFor(height: 60, width: 320),
-                        child: ElevatedButton(
-                          style: ButtonStyle(
-                            backgroundColor:
+                            child: ElevatedButton.icon(
+                              style: ButtonStyle(
+                                alignment: Alignment.centerLeft,
+                                backgroundColor:
                                 MaterialStateProperty.all(Color(0XFF012257)),
-                          ),
-                          onPressed: () {},
-                          child: Align(
-                            alignment: Alignment.centerLeft,
-                            child: Container(
-                              child: const Text(
-                                'Empresas Parceiras',
-                                textAlign: TextAlign.start,
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.normal,
-                                ),
                               ),
+                              label: Text('Profissionais parceiros'),
+                              icon: Icon(Icons.build),
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                            Profissionais()));
+                              },
                             ),
-                          ),
-                        ),
-                      )),
+                          )),
+                      Container(
+                          padding: EdgeInsets.fromLTRB(10, 10, 10, 43),
+                          child: ConstrainedBox(
+                            constraints:
+                            BoxConstraints.tightFor(height: 60, width: 320),
+                            child: ElevatedButton.icon(
+                              style: ButtonStyle(
+                                alignment: Alignment.centerLeft,
+                                backgroundColor:
+                                MaterialStateProperty.all(Colors.grey),
+                              ),
+                              label: Text('Empresas Parceiras'),
+                              icon: Icon(Icons.business_center),
+                              onPressed: desligado(),
+                            ),
+                          )),
+
+                    ],
+                  ),
                 ],
               ),
             ),
