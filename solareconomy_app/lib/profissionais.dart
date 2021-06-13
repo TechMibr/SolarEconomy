@@ -64,7 +64,7 @@ class Profissionais extends StatelessWidget {
                       ],
                     ),
                     decoration: BoxDecoration(
-                      color: Colors.black,
+                      color: Colors.grey[600],
                       borderRadius: BorderRadius.circular(5),
                     ),
                   ),
@@ -244,7 +244,7 @@ class Profissionais extends StatelessWidget {
                       ],
                     ),
                     decoration: BoxDecoration(
-                      color: Colors.black,
+                      color: Colors.grey[600],
                       borderRadius: BorderRadius.circular(5),
                     ),
                   ),

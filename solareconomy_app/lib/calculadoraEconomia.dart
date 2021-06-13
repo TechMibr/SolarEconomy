@@ -46,33 +46,15 @@ class _CalculadoraEconomiaState extends State<CalculadoraEconomia> {
     'TOCANTINS (TO)',
   ];
 
-  final letters = ['ACRE (AC)',
-    'ALAGOAS (AL)',
-    'AMAPÁ (AP)',
-    'AMAZONAS (AM)',
-    'BAHIA (BA)',
-    'CEARÁ (CE)',
-    'DISTRITO FEDERAL (DF)',
-    'ESPÍRITO SANTO (ES)',
-    'GOIÁS (GO)',
-    'MARANHÃO (MA)',
-    'MATO GROSSO (MT)',
-    'MATO GROSSO DO SUL (MS)',
-    'MINAS GERAIS (MG)',
-    'PARÁ (PA)',
-    'PARAÍBA (PB)',
-    'PARANÁ (PR)',
-    'PERNAMBUCO (PE)',
-    'PIAUÍ (PI)',
-    'RIO DE JANEIRO (RJ)',
-    'RIO GRANDE DO NORTE (RN)',
-    'RIO GRANDE DO SUL (RS)',
-    'RONDÔNIA (RO)',
-    'RORAIMA (RR)',
-    'SANTA CATARINA (SC)',
-    'SÃO PAULO (SP)',
-    'SERGIPE (SE)',
-    'TOCANTINS (TO)'];
+  var bandeiraSelecionada = "Bandeira Verde";
+  final valorContaController = TextEditingController();
+
+  final bandeiras = {
+    "Bandeira Verde": 0.61805,
+    "Bandeira Amarela": 0.63148,
+    "Bandeira Vermelha": 0.65974,
+    "Bandeira Vermelha II": 0.68048,
+  };
 
   @override
   Widget build(BuildContext context) {
@@ -188,13 +170,19 @@ class _CalculadoraEconomiaState extends State<CalculadoraEconomia> {
                                 TextFormField(
                                   decoration: InputDecoration(
                                     enabledBorder: UnderlineInputBorder(
-                                      borderSide: BorderSide(color: Color(0XFF012257),),
+                                      borderSide: BorderSide(
+                                        color: Color(0XFF012257),
+                                      ),
                                     ),
                                     focusedBorder: UnderlineInputBorder(
-                                      borderSide: BorderSide(color: Color(0XFF012257),),
+                                      borderSide: BorderSide(
+                                        color: Color(0XFF012257),
+                                      ),
                                     ),
                                     border: UnderlineInputBorder(
-                                      borderSide: BorderSide(color: Color(0XFF012257),),
+                                      borderSide: BorderSide(
+                                        color: Color(0XFF012257),
+                                      ),
                                     ),
                                   ),
                                   // The validator receives the text that the user has entered.
@@ -213,32 +201,27 @@ class _CalculadoraEconomiaState extends State<CalculadoraEconomia> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Tarifa com Imposto em R\$?',
+                                Text('Selecione a tarifa da sua ultima conta',
                                     style: TextStyle(
                                       fontSize: 20,
                                       color: Color(0XFF012257),
                                       fontWeight: FontWeight.bold,
                                     )),
-                                TextFormField(
-                                  decoration: InputDecoration(
-                                    enabledBorder: UnderlineInputBorder(
-                                      borderSide: BorderSide(color: Color(0XFF012257),),
-                                    ),
-                                    focusedBorder: UnderlineInputBorder(
-                                      borderSide: BorderSide(color: Color(0XFF012257),),
-                                    ),
-                                    border: UnderlineInputBorder(
-                                      borderSide: BorderSide(color: Color(0XFF012257),),
-                                    ),
-                                  ),
-                                  keyboardType: TextInputType.number,
-                                  // The validator receives the text that the user has entered.
-                                  validator: (value) {
-                                    if (value == null || value.isEmpty) {
-                                      return 'Insira o valor';
-                                    }
-                                    return null;
+                                DropdownButton(
+                                  value: bandeiraSelecionada,
+                                  onChanged: (bandeira) {
+                                    setState(() {
+                                      bandeiraSelecionada = bandeira;
+                                    });
                                   },
+                                  items: bandeiras.keys
+                                      .map(
+                                        (e) => DropdownMenuItem(
+                                          value: e,
+                                          child: Text(e),
+                                        ),
+                                      )
+                                      .toList(),
                                 ),
                               ],
                             ),
@@ -248,22 +231,29 @@ class _CalculadoraEconomiaState extends State<CalculadoraEconomia> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Quanto você paga em energia por mês em R\$?',
+                                Text('Qual o valor da sua ultima conta em R\$?',
                                     style: TextStyle(
                                       fontSize: 20,
                                       color: Color(0XFF012257),
                                       fontWeight: FontWeight.bold,
                                     )),
                                 TextFormField(
+                                  controller: valorContaController,
                                   decoration: InputDecoration(
                                     enabledBorder: UnderlineInputBorder(
-                                      borderSide: BorderSide(color: Color(0XFF012257),),
+                                      borderSide: BorderSide(
+                                        color: Color(0XFF012257),
+                                      ),
                                     ),
                                     focusedBorder: UnderlineInputBorder(
-                                      borderSide: BorderSide(color: Color(0XFF012257),),
+                                      borderSide: BorderSide(
+                                        color: Color(0XFF012257),
+                                      ),
                                     ),
                                     border: UnderlineInputBorder(
-                                      borderSide: BorderSide(color: Color(0XFF012257),),
+                                      borderSide: BorderSide(
+                                        color: Color(0XFF012257),
+                                      ),
                                     ),
                                   ),
                                   keyboardType: TextInputType.number,
@@ -276,26 +266,39 @@ class _CalculadoraEconomiaState extends State<CalculadoraEconomia> {
                                   },
                                 ),
                                 Column(
-                                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                                  crossAxisAlignment:
+                                      CrossAxisAlignment.stretch,
                                   children: [
                                     Container(
-                                      padding: EdgeInsets.only(top: 40, bottom: 50),
+                                      padding:
+                                          EdgeInsets.only(top: 40, bottom: 50),
                                       child: ElevatedButton(
                                         style: ButtonStyle(
-                                          backgroundColor: MaterialStateProperty.all(Color(0XFF012257)),
+                                          backgroundColor:
+                                              MaterialStateProperty.all(
+                                                  Color(0XFF012257)),
                                         ),
                                         onPressed: () {
                                           if (formKey.currentState.validate()) {
-                                            ScaffoldMessenger.of(context)
-                                                .showSnackBar(SnackBar(content: Text('Implementando')));
-                                          }
-                                          Navigator.push(
+                                            Navigator.push(
                                               context,
                                               MaterialPageRoute(
-                                                  builder: (BuildContext context) =>
-                                                      Resultado()));
+                                                builder:
+                                                    (BuildContext context) =>
+                                                        Resultado(
+                                                  valorConta: double.parse(
+                                                      valorContaController
+                                                          .text),
+                                                  tarifaBandeira: bandeiras[
+                                                      bandeiraSelecionada],
+                                                ),
+                                              ),
+                                            );
+                                          }
                                         },
-                                        child: Text('RESULTADO'),),),
+                                        child: Text('RESULTADO'),
+                                      ),
+                                    ),
                                   ],
                                 )
                               ],
@@ -312,5 +315,3 @@ class _CalculadoraEconomiaState extends State<CalculadoraEconomia> {
     );
   }
 }
-
-
