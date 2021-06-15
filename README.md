@@ -1,7 +1,8 @@
 # Solaris
 
-
+<div align="center">
 ![Logo](https://i.imgur.com/8wAk9yE.png "Logo")
+</div>
 
 <h4 align="center">
   
