@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Doe extends StatelessWidget {
   const Doe({Key key}) : super(key: key);
@@ -56,7 +57,7 @@ class Doe extends StatelessWidget {
                       MaterialStateProperty.all(Colors.green),
                     ),
                     onPressed: () {
-
+                      launch('https://www.paypal.com/br/home');
                     },
                     child: Align(
                       alignment: Alignment.center,

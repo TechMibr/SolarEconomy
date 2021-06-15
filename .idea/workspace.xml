@@ -24,14 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="58f63603-2a27-4b58-b904-5bc74116c466" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solareconomy_app/lib/central.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solareconomy_app/lib/central.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solareconomy_app/lib/profissionais.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solareconomy_app/lib/profissionais.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solareconomy_app/lib/saibamais1.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solareconomy_app/lib/saibamais1.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solareconomy_app/lib/saibamais2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solareconomy_app/lib/saibamais2.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solareconomy_app/lib/saibamais3.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solareconomy_app/lib/saibamais3.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solareconomy_app/lib/saibamais4.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solareconomy_app/lib/saibamais4.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solareconomy_app/lib/saibamais5.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solareconomy_app/lib/saibamais5.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solareconomy_app/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/solareconomy_app/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solareconomy_app/lib/doacao.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solareconomy_app/lib/doacao.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solareconomy_app/lib/resultado.dart" beforeDir="false" afterPath="$PROJECT_DIR$/solareconomy_app/lib/resultado.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,22 +108,22 @@
       <screen x="0" y="0" width="2560" height="1050" />
     </state>
     <state x="1065" y="242" key="FileChooserDialogImpl/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1622915234711" />
-    <state width="1816" height="314" key="GridCell.Tab.0.bottom" timestamp="1623788762193">
+    <state width="2517" height="314" key="GridCell.Tab.0.bottom" timestamp="1623796442965">
       <screen x="0" y="0" width="2560" height="1050" />
     </state>
-    <state width="1816" height="314" key="GridCell.Tab.0.bottom/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1623788762193" />
-    <state width="1816" height="314" key="GridCell.Tab.0.center" timestamp="1623788762193">
+    <state width="2517" height="314" key="GridCell.Tab.0.bottom/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1623796442965" />
+    <state width="2517" height="314" key="GridCell.Tab.0.center" timestamp="1623796442965">
       <screen x="0" y="0" width="2560" height="1050" />
     </state>
-    <state width="1816" height="314" key="GridCell.Tab.0.center/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1623788762193" />
-    <state width="1816" height="314" key="GridCell.Tab.0.left" timestamp="1623788762193">
+    <state width="2517" height="314" key="GridCell.Tab.0.center/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1623796442965" />
+    <state width="2517" height="314" key="GridCell.Tab.0.left" timestamp="1623796442965">
       <screen x="0" y="0" width="2560" height="1050" />
     </state>
-    <state width="1816" height="314" key="GridCell.Tab.0.left/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1623788762193" />
-    <state width="1816" height="314" key="GridCell.Tab.0.right" timestamp="1623788762193">
+    <state width="2517" height="314" key="GridCell.Tab.0.left/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1623796442965" />
+    <state width="2517" height="314" key="GridCell.Tab.0.right" timestamp="1623796442965">
       <screen x="0" y="0" width="2560" height="1050" />
     </state>
-    <state width="1816" height="314" key="GridCell.Tab.0.right/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1623788762193" />
+    <state width="2517" height="314" key="GridCell.Tab.0.right/-1600.113.1600.870/0.0.2560.1050@0.0.2560.1050" timestamp="1623796442965" />
     <state x="781" y="169" key="SettingsEditor" timestamp="1622915287142">
       <screen x="0" y="0" width="2560" height="1050" />
     </state>

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Resultado extends StatelessWidget {
   Resultado({Key key, this.valorConta, this.tarifaBandeira}) : super(key: key);
@@ -149,14 +150,52 @@ class Resultado extends StatelessWidget {
             Container(
               padding: EdgeInsets.only(left: 20, right: 20),
               child: Text(
-                'Em $roi meses pagando o mesmo valor da sua conta de luz como parcelas, você pagará o investimento total e apartir disso sua conta de luz virá zerada',
+                'Em $roi meses pagando o mesmo valor da sua conta de luz como parcelas, você pagará o investimento total e a partir disso, sua conta de luz virá zerada',
                 style: TextStyle(
                   color: Color(0XFF012257),
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-            )
+            ),
+            Container(
+              padding: EdgeInsets.fromLTRB(10, 30, 10, 3),
+              child: ConstrainedBox(
+                  constraints:
+                  BoxConstraints.tightFor(height: 50, width: 100),
+                  child: ElevatedButton.icon(
+                    icon: Icon(Icons.home),
+                    label: Text("Voltar"),
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/central');
+                    },
+                    style: ElevatedButton.styleFrom(
+                      primary: Color(0XFF012257),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(32.0),
+                      ),
+                    ),
+                  )),
+            ),
+            Container(
+              padding: EdgeInsets.fromLTRB(10, 10, 10, 30),
+              child: ConstrainedBox(
+                  constraints:
+                  BoxConstraints.tightFor(height: 50, width: 320),
+                  child: ElevatedButton.icon(
+                    icon: Icon(Icons.share),
+                    label: Text("COMPARTILHAR"),
+                    onPressed: () {
+                      launch('https://github.com/TechMibr/SolarEconomy');
+                    },
+                    style: ElevatedButton.styleFrom(
+                      primary: Color(0XFF012257),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(32.0),
+                      ),
+                    ),
+                  )),
+            ),
           ],
         ),
       ),
