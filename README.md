@@ -1,7 +1,7 @@
 # Solaris
 
 <p align="center">
-  <img width="460" height="300" src="http://i.imgur.com/8wAk9yE.png">
+  <img src="http://i.imgur.com/8wAk9yE.png">
 </p>
 
 <h4 align="center">
