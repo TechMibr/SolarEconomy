@@ -200,22 +200,6 @@ class Central extends StatelessWidget {
                                 backgroundColor:
                                 MaterialStateProperty.all(Color(0XFF012257)),
                               ),
-                              label: Text('Comparador'),
-                              icon: Icon(Icons.auto_awesome_motion),
-                              onPressed: () {},
-                            ),
-                          )),
-                      Container(
-                          padding: EdgeInsets.fromLTRB(10, 10, 10, 3),
-                          child: ConstrainedBox(
-                            constraints:
-                            BoxConstraints.tightFor(height: 60, width: 320),
-                            child: ElevatedButton.icon(
-                              style: ButtonStyle(
-                                alignment: Alignment.centerLeft,
-                                backgroundColor:
-                                MaterialStateProperty.all(Color(0XFF012257)),
-                              ),
                               label: Text('Saiba mais sobre energia renovável'),
                               icon: Icon(Icons.add_circle_rounded),
                               onPressed: () {
@@ -247,6 +231,22 @@ class Central extends StatelessWidget {
                                         builder: (BuildContext context) =>
                                             Profissionais()));
                               },
+                            ),
+                          )),
+                      Container(
+                          padding: EdgeInsets.fromLTRB(10, 10, 10, 3),
+                          child: ConstrainedBox(
+                            constraints:
+                            BoxConstraints.tightFor(height: 60, width: 320),
+                            child: ElevatedButton.icon(
+                              style: ButtonStyle(
+                                alignment: Alignment.centerLeft,
+                                backgroundColor:
+                                MaterialStateProperty.all(Colors.grey),
+                              ),
+                              label: Text('Comparador'),
+                              icon: Icon(Icons.auto_awesome_motion),
+                              onPressed: desligado(),
                             ),
                           )),
                       Container(

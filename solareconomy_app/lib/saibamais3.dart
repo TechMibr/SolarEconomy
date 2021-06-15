@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Saibamais3 extends StatelessWidget {
   const Saibamais3({Key key}) : super(key: key);
@@ -62,6 +63,25 @@ class Saibamais3 extends StatelessWidget {
                         color: Color(0XFF012257),
                       ),
                     ),
+                  ),
+                  Container(
+                    padding: EdgeInsets.fromLTRB(10, 30, 10, 3),
+                    child: ConstrainedBox(
+                        constraints:
+                        BoxConstraints.tightFor(height: 50, width: 320),
+                        child: ElevatedButton.icon(
+                          icon: Icon(Icons.share),
+                          label: Text("COMPARTILHAR"),
+                          onPressed: () {
+                            launch('https://github.com/TechMibr/SolarEconomy');
+                          },
+                          style: ElevatedButton.styleFrom(
+                            primary: Color(0XFF012257),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(32.0),
+                            ),
+                          ),
+                        )),
                   ),
                 ],
               ),
