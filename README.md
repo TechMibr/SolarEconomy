@@ -1,4 +1,4 @@
-# SolarEconomy
+# Solaris
 
 
 ![Logo](https://i.imgur.com/6GavyIQ.png "Logo")
