@@ -39,8 +39,6 @@ Trabalho prático da disciplina de **Usabilidade, desenvolvimento web, mobile e 
 
 - [Flutter](https://flutter.dev/)
 - [Node.js](https://nodejs.org/en/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Angular](https://angular.io/)
 
 # Autores
 
