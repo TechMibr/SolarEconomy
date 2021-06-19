@@ -1,7 +1,8 @@
-# SolarEconomy
+# Solaris
 
-
-![Logo](https://i.imgur.com/6GavyIQ.png "Logo")
+<p align="center">
+  <img src="http://i.imgur.com/8wAk9yE.png">
+</p>
 
 <h4 align="center">
   
